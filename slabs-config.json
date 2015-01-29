@@ -1,6 +1,23 @@
 {
   "name" : "Facebook Page Likes",
+  "description" : "Grabs the number of facebook likes a page has",
   "type" : "source",
   "connectionsIn" : 1,
-  "connectionsOut" : 3
+  "connectionsOut" : 3,
+  "schema" : {
+    "type": "object",
+    "properties" : {
+      "pageId": {
+        "type": "string",
+        "default": "Firefox",
+        "minLength" : 2,
+        "description" : "For example 'Firefox' from https://www.facebook.com/Firefox",
+        "title": "Facebook Page ID"
+      }
+    }
+  },
+  "source": {
+    "label": "Facebook",
+    "url": "http://www.facebook.com/"
+  }
 }
