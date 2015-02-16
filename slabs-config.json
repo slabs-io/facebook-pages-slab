@@ -13,7 +13,8 @@
         "default": "Firefox",
         "minLength" : 2,
         "description" : "For example 'Firefox' from https://www.facebook.com/Firefox",
-        "title": "Facebook Page ID"
+        "title": "Facebook Page ID",
+        "brief": "Page ID"
       }
     }
   },
